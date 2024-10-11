@@ -1,0 +1,155 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+
+  --font-heading: "Young Serif", system-ui;
+  --font-body: "Outfit", system-ui;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Typography */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--stone-100);
+  color: var(--stone-600);
+  font-family: var(--font-body);
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+h1,
+h2 {
+  color: var(--stone-900);
+  font-family: var(--font-heading);
+  line-height: 100%;
+  margin-bottom: 2.8rem;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 3.6rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+  color: var(--brown-800);
+}
+
+p {
+  margin-bottom: 3.5rem;
+}
+
+@media screen and (min-width: 786px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+/* layout */
+.recipe-wrapper {
+  background-color: var(--white);
+  max-width: 73.6rem;
+  margin: 0 auto;
+}
+
+.container {
+  padding: 4rem 3.2rem;
+}
+
+.block {
+  padding: 2.5rem;
+  border-radius: 1rem;
+  margin-bottom: 3.5rem;
+}
+
+.block--pink {
+  background-color: var(--rose-50);
+}
+
+.block--pink .block__title {
+  color: var(--rose-800);
+  font-weight: 600;
+  font-size: 2rem;
+  font-family: var(--font-body);
+}
+
+section {
+  border-bottom: 1px solid var(--stone-100);
+  margin-bottom: 3.5rem;
+}
+
+section:last-child {
+  border: 0;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .recipe-wrapper {
+    border-radius: 2rem;
+    margin: 12.3rem auto;
+  }
+  .container {
+    padding: 4rem;
+  }
+
+  header {
+    padding: 4rem 4rem 0;
+  }
+
+  .header__image {
+    border-radius: 1rem;
+  }
+}
+
+/* List */
+.list {
+  margin-left: 2.7rem;
+}
+
+.list li {
+  padding-left: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+li::marker {
+  color: var(--brown-800);
+  font-weight: 600;
+}
+
+/* Table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: -2rem;
+}
+
+tr {
+  border-bottom: 1px solid var(--stone-100);
+}
+
+td {
+  padding: 1.5rem 3.2rem;
+}
+
+table strong {
+  color: var(--brown-800);
+}
